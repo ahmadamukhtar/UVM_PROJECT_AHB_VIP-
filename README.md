@@ -2,7 +2,7 @@
 AHB_VIP
 
 
-..................
+
 AHB_VIP UVM_PROJECT_AHB_VIP The project aims to develop the VIP for the AHB protocol. It consists 
 of two UVCs and one top-level environment: the master UVC to verify master and the slave UVC to verify slave, 
 individually. The master UVC contains the sequences to drive the master interface and assertions to 
