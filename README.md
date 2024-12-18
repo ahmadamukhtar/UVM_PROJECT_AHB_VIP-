@@ -79,16 +79,6 @@ This repository contains the **Verification IP (VIP) for the AMBA Advanced High-
 
 ---
 
-## ✅ Results
-- Comprehensive assertion-based checking and scoreboard validation.
-- High functional and code coverage across Manager and Subordinate UVCs.
-- Verified scenarios include:
-  - Single bursts
-  - Incremental bursts (INCR4, INCR8, INCR16)
-  - Wrapping bursts (WRAP4, WRAP8, WRAP16)
-
----
-
 ## 🔧 How to Use
 1. Clone the repository:
    ```bash
