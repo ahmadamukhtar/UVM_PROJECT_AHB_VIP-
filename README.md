@@ -103,9 +103,9 @@ This repository contains the **Verification IP (VIP) for the AMBA Advanced High-
 ---
 
 ## 📜 License
-This project is licensed under the MIT License. See `LICENSE` for more details.  
+The licensed is under process.  
 
-For further details, refer to the [documentation](docs/AHB_protocol_overview.pdf) or contact the contributors.  
+For further details, refer to the [documentation](https://github.com/ahmadamukhtar/UVM_PROJECT_AHB_VIP-/edit/main/AHB_protocol_overview.pdf) or contact the contributors.  
 
 --- 
 
