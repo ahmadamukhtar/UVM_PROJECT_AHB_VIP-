@@ -5,7 +5,7 @@
 ## 🚀 Overview
 This repository contains the **Verification IP (VIP) for the AMBA Advanced High-Performance Bus (AHB)** protocol, designed using **SystemVerilog** and **Universal Verification Methodology (UVM)**. The project ensures comprehensive verification of AHB protocol functionalities through modular, reusable testbenches and robust assertion-based checking.
 
-## 🚀 Overall Artitechral View
+## 🚀 Overall Architectural View
 ![gite](https://github.com/user-attachments/assets/241caee2-5a78-4eb5-b636-8c5f81a39e5f)
 
 ---
