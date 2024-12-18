@@ -85,7 +85,7 @@ This repository contains the **Verification IP (VIP) for the AMBA Advanced High-
 ## 🔧 How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/ahb-vip.git
+   git@github.com:ahmadamukhtar/UVM_PROJECT_AHB_VIP-.git
    ```
 2. Set up the required simulation environment (SystemVerilog and UVM libraries).
 3. Run tests:
