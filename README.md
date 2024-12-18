@@ -1,9 +1,124 @@
-# AHB_VIP
-AHB_VIP
+# AHB Verification IP (VIP)
 
+---
 
-The project aims to develop the VIP for the AHB protocol. It consists of two UVCs and one top-level environment: the master UVC to verify the master interface and the slave UVC to verify the slave interface, individually. For this purpose, we have applied assertions according to the specified behavior of the respective DUT. Each UVC contains sequences to drive the respective DUT and monitor its output to verify protocol compliance.
+## 🚀 Overview
+This repository contains the **Verification IP (VIP) for the AMBA Advanced High-Performance Bus (AHB)** protocol, designed using **SystemVerilog** and **Universal Verification Methodology (UVM)**. The project ensures comprehensive verification of AHB protocol functionalities through modular, reusable testbenches and robust assertion-based checking.
 
-The VIP supports multi-manager functionality, which allows the user to instantiate the UVCs according to the number of interfaces available in the design. Additionally, coverage for the UVCs is collected separately. The scoreboard is used to verify both the VIP and data verification.
+---
+
+## ✨ Features
+- **Verification Components (UVCs):** Modular testbench architecture for Manager and Subordinate components.
+- **SystemVerilog Assertions (SVA):** Ensures compliance with AHB protocol specifications.
+- **Scoreboard Implementation:** Validates data integrity between Manager and Subordinate.
+- **Coverage Metrics:** Functional and code coverage to assess verification completeness.
+- **Supported Transactions:** Single bursts, incremental bursts (INCR4, INCR8, INCR16), wrapping bursts (WRAP4, WRAP8, WRAP16).
+
+---
+
+## 📂 Repository Structure
+```plaintext
+├── manager_uvc/
+│   ├── sequencer.sv
+│   ├── driver.sv
+│   ├── monitor.sv
+│   └── assertions.sv
+├── subordinate_uvc/
+│   ├── sequencer.sv
+│   ├── driver.sv
+│   ├── monitor.sv
+│   └── assertions.sv
+├── top_uvc/
+│   ├── scoreboard.sv
+│   ├── manager_instance.sv
+│   ├── subordinate_instance.sv
+│   └── tests/
+│       ├── single_burst_test.sv
+│       ├── incr4_test.sv
+│       ├── incr8_test.sv
+│       ├── wrap4_test.sv
+│       └── full_coverage_test.sv
+├── docs/
+│   ├── AHB_protocol_overview.pdf
+│   ├── VIP_architecture_diagram.png
+│   ├── functional_coverage_report.txt
+│   └── code_coverage_report.txt
+└── README.md
+```
+
+---
+
+## 🛠 Methodology
+1. **Manager UVC:** 
+   - Sequencer generates transaction sequences.
+   - Driver drives transactions onto the Manager interface.
+   - Monitor checks the protocol compliance using assertions.
+   - Coverage tracks transaction types (Single, Increment, Wrap).
+   
+2. **Subordinate UVC:**
+   - Sequencer generates response sequences.
+   - Driver simulates Subordinate behavior.
+   - Monitor validates compliance and signal correctness.
+   - Assertions include error responses, ready signal handling, and data integrity checks.
+   
+3. **Top UVC:**
+   - Integrates Manager and Subordinate UVCs.
+   - Scoreboard validates data transfer integrity and timing.
+   - Includes tests for multiple transaction types and corner cases.
+
+---
+
+## 📊 Coverage
+- **Functional Coverage:**
+  - Ensures adherence to AHB protocol rules and specifications.
+  - Validates all defined transaction types and edge cases.
+  
+- **Code Coverage:**
+  - Measures execution of testbench and design code.
+  - Highlights untested paths and unused design features.
+
+---
+
+## ✅ Results
+- Comprehensive assertion-based checking and scoreboard validation.
+- High functional and code coverage across Manager and Subordinate UVCs.
+- Verified scenarios include:
+  - Single bursts
+  - Incremental bursts (INCR4, INCR8, INCR16)
+  - Wrapping bursts (WRAP4, WRAP8, WRAP16)
+
+---
+
+## 🔧 How to Use
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ahb-vip.git
+   ```
+2. Set up the required simulation environment (SystemVerilog and UVM libraries).
+3. Run tests:
+   ```bash
+   cd top_uvc/tests
+   make run_test TEST=<test_name>
+   ```
+4. Analyze coverage results in the `docs/` directory.
+
+---
+
+## 👥 Contributors
+- **Usama Ahmed**  
+- **Ahmad Mukhtar**  
+- **Khizer Mehmood**  
+- **Coordinator:** Hira Sohail  
+
+---
+
+## 📜 License
+This project is licensed under the MIT License. See `LICENSE` for more details.  
+
+For further details, refer to the [documentation](docs/AHB_protocol_overview.pdf) or contact the contributors.  
+
+--- 
+
+**🌟 Happy Verifying!** 
 
 
