@@ -98,10 +98,9 @@ This repository contains the **Verification IP (VIP) for the AMBA Advanced High-
 ---
 
 ## 👥 Contributors
-- **Usama Ahmed**  
-- **Ahmad Mukhtar**  
-- **Khizer Mehmood**  
-- **Coordinator:** Hira Sohail  
+- **Ahmad Mukhtar**
+- **Usama Ahmed**    
+- **Khizer Mehmood** 
 
 ---
 
