@@ -82,35 +82,11 @@ This repository contains the **Verification IP (VIP) for the AMBA Advanced High-
 
 ---
 
-## 🔧 How to Use
-1. Clone the repository:
-   ```bash
-   git@github.com:ahmadamukhtar/UVM_PROJECT_AHB_VIP-.git
-   ```
-2. Set up the required simulation environment (SystemVerilog and UVM libraries).
-3. Run tests:
-   ```bash
-   cd top_uvc/tests
-   make run_test TEST=<test_name>
-   ```
-4. Analyze coverage results in the `docs/` directory.
-
----
-
 ## 👥 Contributors
 - **Ahmad Mukhtar**
 - **Usama Ahmed**    
 - **Khizer Mehmood** 
 
 ---
-
-## 📜 License
-The licensed is under process.  
-
-For further details, refer to the [documentation](https://github.com/ahmadamukhtar/UVM_PROJECT_AHB_VIP-/edit/main/AHB_protocol_overview.pdf) or contact the contributors.  
-
---- 
-
-**🌟 Happy Verifying!** 
 
 
